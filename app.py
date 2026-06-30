@@ -4,7 +4,7 @@ import json
 import re
 
 st.set_page_config(
-    page_title="PackCompliance.ai – Packaging Compliance Triage",
+    page_title="PackCoPilot.app – Packaging Compliance Triage",
     page_icon="📦",
     layout="wide",
 )
@@ -136,7 +136,7 @@ SVG_JAR = """<svg width="52" height="68" viewBox="0 0 52 68" xmlns="http://www.w
 SAMPLE_SVGS = [SVG_BOTTLE, SVG_POUCH, SVG_JAR]
 
 # ── Prompts ───────────────────────────────────────────────────────────────────
-SYSTEM_PROMPT = """You are PackCompliance.ai, an expert UK and EU packaging compliance AI assistant.
+SYSTEM_PROMPT = """You are PackCoPilot.app, an expert UK and EU packaging compliance AI assistant.
 You assess plastic packaging against the EU Packaging and Packaging Waste Regulation (PPWR, Regulation 2025/40,
 in force February 2025, applying from August 2026), UK Plastic Packaging Tax (PPT), UK EPR for packaging,
 and on-pack recyclability labelling rules (OPRL in UK, Triman in France).
@@ -348,7 +348,7 @@ def render_results(result: dict):
 
     st.markdown("---")
     st.caption(
-        "⚠️ PackCompliance.ai is an AI-powered screening tool and does not constitute legal or regulatory advice. "
+        "⚠️ PackCoPilot.app is an AI-powered screening tool and does not constitute legal or regulatory advice. "
         "Always verify outputs with a qualified packaging regulatory consultant."
     )
 
@@ -358,7 +358,7 @@ st.markdown("""
 <div class="hero">
   <div style="font-size:1.6rem;line-height:1">📦</div>
   <div>
-    <h1>PackCompliance.ai</h1>
+    <h1>PackCoPilot.app</h1>
     <p>AI-powered packaging compliance triage for CPG brands launching into UK &amp; EU markets</p>
   </div>
 </div>
@@ -376,12 +376,12 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("### ℹ️ About")
     st.markdown(
-        "PackCompliance.ai screens packaging concepts against UK and EU regulations "
+        "PackCoPilot.app screens packaging concepts against UK and EU regulations "
         "before artwork, supplier quotes, and production are committed — saving brands "
         "from costly last-minute compliance issues."
     )
     st.markdown("---")
-    st.caption("Proof of Concept · PackCompliance.ai · 2025")
+    st.caption("Proof of Concept · PackCoPilot.app · 2025")
     st.caption("⚠️ For demonstration only. Always verify with a qualified regulatory consultant.")
 
 # ── Explainer ─────────────────────────────────────────────────────────────────
@@ -390,7 +390,7 @@ st.markdown("""
             padding:0.85rem 1.1rem;margin-bottom:1.25rem;
             box-shadow:0 1px 3px rgba(0,0,0,0.06)">
   <p style="margin:0 0 0.6rem;font-size:0.95rem;color:#1a3a2a;font-weight:500">
-    PackCompliance.ai helps CPG brands assess packaging feasibility before committing
+    PackCoPilot.app helps CPG brands assess packaging feasibility before committing
     to artwork, supplier quotes, or production — surfacing regulatory constraints,
     documentation requirements, and on-pack claim risks early in the launch process.
     Each concept is scored and assigned a traffic light rating:
